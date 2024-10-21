@@ -1,0 +1,140 @@
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.container {
+    width: 100%; /* O contêiner ocupa 100% da largura da tela */
+    max-width: 100%; /* Garante que o contêiner não fique maior que a tela */
+    overflow-x: hidden; /* Remove a barra de rolagem horizontal dentro do contêiner */
+}
+
+ul {
+    height: 25px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    position: fixed;
+    z-index: 3;
+}
+
+.img-topo {
+    height: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+video {
+    width: 100vw;
+    min-height: 80vh;
+    margin-top: 10px;
+}
+
+.capa {
+    position: absolute;
+    bottom: 40%;
+    left: 5%;
+    width: 35%;
+    z-index: 3;
+}
+
+.capa-titulo {
+    color: white;
+    font-size: 55px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.capa-descricao {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.link-assistir {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link-assistir:hover {
+    background-color: rgba(255, 255, 255, 0.35);
+}
+
+.link-assistir:active {
+    opacity: 0.8;
+}
+
+.link-informacoes {
+    background-color: rgba(255, 255, 255, 0.35);
+    color: black;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.link-informacoes:hover {
+    background-color: white;
+}
+
+.link-informacoes:active {
+    opacity: 0.8;
+}
+
+.imagem-carrosel {
+    height: 150px;
+}
+
+.titulo-carrosel {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#carouselExample {
+    background-color: transparent;
+    position: absolute;
+    bottom: -50px;
+    left: 50px;
+}
+
+.botao-som {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-conteudo {
+    background-color: #181818;
+    margin: 30px auto;
+    padding: 20px;
+    width: 60%;
+    color: white;
+}
